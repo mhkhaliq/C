@@ -73,7 +73,7 @@ int main ( int argc, char **argv ) {
     }/* end for */
     switch ( dataRead ) {
       case ( 16 ):
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X  %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X   %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -95,7 +95,7 @@ int main ( int argc, char **argv ) {
         break;
       case ( 15 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X       %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X      %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -116,7 +116,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 14 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X            %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X         %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -136,7 +136,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 13 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X                 %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X            %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -155,7 +155,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 12 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X                      %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X               %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -173,7 +173,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 11 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X                           %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X                  %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -190,7 +190,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 10 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X                                %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X %02X                     %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -206,7 +206,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 9 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X                                     %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X %02X                        %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -221,7 +221,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 8 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X                                          %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X %02X                           %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -235,7 +235,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 7 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X                                               %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X %02X                              %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -248,7 +248,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 6 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X %02X                                                    %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X %02X                                 %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -260,7 +260,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 5 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X %02X                                                         %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X %02X                                    %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -271,7 +271,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 4 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X %02X                                                              %s\n",
+        printf ( "%08lX  %02X %02X %02X %02X                                       %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -281,7 +281,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 3 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X %02X                                                                   %s\n",
+        printf ( "%08lX  %02X %02X %02X                                          %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -290,7 +290,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 2 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X %02X                                                                        %s\n",
+        printf ( "%08lX  %02X %02X                                             %s\n",
             bytesOffset,
             *dataA,
             *(dataA + 1),
@@ -298,7 +298,7 @@ int main ( int argc, char **argv ) {
         goto END;
       case ( 1 ):
         *(asciiS + i ) = '\0';
-        printf ( "%08lX  %02X                                                                             %s\n",
+        printf ( "%08lX  %02X                                                %s\n",
             bytesOffset,
             *dataA,
             asciiS );
